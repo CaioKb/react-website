@@ -6,12 +6,10 @@ import Home from '../containers/Home/Home'
 
 export default function Routes() {
     return (
-        <BrowserRouter>
             <Switch>
                 <Redirect exact path='/' to='/login' />
                 <Route exact path="/login" component={Login} />
                 <Route exact path="/home" component={Home} />
             </Switch>
-        </BrowserRouter>
     );
 }
